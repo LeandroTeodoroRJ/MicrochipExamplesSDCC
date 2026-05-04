@@ -66,20 +66,20 @@ Up to SDCC 3.4.0, the precompiled version of SDCC worked fine on Ubuntu 12.04 LT
 
 ### PICKIT 3 Instalation:
 #### Ubuntu Linux:
-$ sudo apt-get install build-essential libusb-dev
-$ sudo apt update && sudo apt install libusb-1.0-0-dev
-$ git clone https://github.com/jaka-fi/pk2cmd.git
-$ cd pk2cmd/pk2cmd
-$ make linux
-$ sudo make install
+$ sudo apt-get install build-essential libusb-dev  
+$ sudo apt update && sudo apt install libusb-1.0-0-dev  
+$ git clone https://github.com/jaka-fi/pk2cmd.git  
+$ cd pk2cmd/pk2cmd  
+$ make linux  
+$ sudo make install  
 
 ### Install GeanyIDE
-$ sudo apt install geany
+$ sudo apt install geany  
 You can change the theme putting the config file in the `~/.config/geany/colorschemes/`
 
 ### Uploading .hex file
-$ pk2cmd -P <processor> -F <hex file> -M -R
-Ih you have problems like `PK2DeviceFile.dat device file not found` copy /usr/share/pk2/PK2DeviceFile.dat to same directory at pk2cmd /usr/local/bin
+$ pk2cmd -P <processor> -F <hex file> -M -R  
+If you have problems like `PK2DeviceFile.dat device file not found` copy /usr/share/pk2/PK2DeviceFile.dat to same directory at pk2cmd /usr/local/bin
 
 ### Continuous Integration (automatic tests)
 This repository is tested automatically on [Travis-CI](https://travis-ci.org/diegoherranz/sdcc-examples/builds) using the latest 3 SDCC and latest 2 gputils releases to make sure that every example is built without errors on those SDCC and gputils combinations (SDCC and gputils are downloaded and installed on the Travis instance automatically). The generated code is not tested (e.g. simulator), but at least this makes sure that the examples can be compiled.
