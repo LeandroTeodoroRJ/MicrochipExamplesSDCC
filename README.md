@@ -87,8 +87,9 @@ $ pk2cmd -P <processor> -E
 This repository is tested automatically on [Travis-CI](https://travis-ci.org/diegoherranz/sdcc-examples/builds) using the latest 3 SDCC and latest 2 gputils releases to make sure that every example is built without errors on those SDCC and gputils combinations (SDCC and gputils are downloaded and installed on the Travis instance automatically). The generated code is not tested (e.g. simulator), but at least this makes sure that the examples can be compiled.
 
 ### Other tutorials
-On the [SDCC Wiki](http://sdcc.sourceforge.net/mediawiki/index.php/SDCC_tutorial) you can find other tutorials that can help you.
-Padauk Git Repository: https://github.com/free-pdk
+On the [SDCC Wiki](http://sdcc.sourceforge.net/mediawiki/index.php/SDCC_tutorial) you can find other tutorials that can help you.  
+Padauk Git Repository: https://github.com/free-pdk  
+EEVblog: https://www.youtube.com/watch?v=HAQG_pnnfn0  
 
 ### Collaboration
 Any kind of collaboration like more examples, more architectures, corrections, comments, etc. are very welcome. Feel free to open an issue or fork and pull request.
