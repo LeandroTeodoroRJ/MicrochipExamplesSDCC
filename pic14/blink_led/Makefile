@@ -12,4 +12,7 @@ $(SRC:.c=.hex): $(SRC)
 clean:
 	rm -f $(SRC:.c=.asm) $(SRC:.c=.cod) $(SRC:.c=.hex) $(SRC:.c=.lst) $(SRC:.c=.o)
 
+upload:
+	pk2cmd -PPIC$(PROC) -F$(SRC:.c=.hex) -M -R
+
 .PHONY: all clean

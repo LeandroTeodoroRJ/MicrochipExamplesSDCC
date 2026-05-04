@@ -27,6 +27,10 @@ There are packages of both SDCC and gputils on repositories of distributions lik
 #### Installing dependencies
 Before intalling gputils and SDCC, these dependencies are needed:
 `$ sudo apt-get install bison flex g++ libboost-dev texinfo` (probably similar packages for other distros)
+Run too:
+`$ sudo apt update`
+`$ sudo apt update`
+`$ sudo apt install zlib1g-dev`
 
 #### gputils installation
 gputils needs to be compiled before installing. Needs to be installed before SDCC.
@@ -46,7 +50,6 @@ Up to SDCC 3.4.0, the precompiled version of SDCC worked fine on Ubuntu 12.04 LT
   - If everything went fine, check that `sdcc -v` works and returns the version number you expect.
 
 ### Installation on Windows
-
 #### gputils installation
 
   - Go to [gputils files page](http://sourceforge.net/projects/gputils/files/gputils-win32/)
@@ -61,11 +64,29 @@ Up to SDCC 3.4.0, the precompiled version of SDCC worked fine on Ubuntu 12.04 LT
   - Just execute the exe file and follow the installer.
   - If everything went fine, check that `sdcc -v` works and returns the version number you expect.
 
+### PICKIT 3 Instalation:
+#### Ubuntu Linux:
+$ sudo apt-get install build-essential libusb-dev
+$ sudo apt update && sudo apt install libusb-1.0-0-dev
+$ git clone https://github.com/jaka-fi/pk2cmd.git
+$ cd pk2cmd/pk2cmd
+$ make linux
+$ sudo make install
+
+### Install GeanyIDE
+$ sudo apt install geany
+You can change the theme putting the config file in the `~/.config/geany/colorschemes/`
+
+### Uploading .hex file
+$ pk2cmd -P <processor> -F <hex file> -M -R
+Ih you have problems like `PK2DeviceFile.dat device file not found` copy /usr/share/pk2/PK2DeviceFile.dat to same directory at pk2cmd /usr/local/bin
+
 ### Continuous Integration (automatic tests)
 This repository is tested automatically on [Travis-CI](https://travis-ci.org/diegoherranz/sdcc-examples/builds) using the latest 3 SDCC and latest 2 gputils releases to make sure that every example is built without errors on those SDCC and gputils combinations (SDCC and gputils are downloaded and installed on the Travis instance automatically). The generated code is not tested (e.g. simulator), but at least this makes sure that the examples can be compiled.
 
 ### Other tutorials
 On the [SDCC Wiki](http://sdcc.sourceforge.net/mediawiki/index.php/SDCC_tutorial) you can find other tutorials that can help you.
+Paduk Git Repository: https://github.com/free-pdk
 
 ### Collaboration
 Any kind of collaboration like more examples, more architectures, corrections, comments, etc. are very welcome. Feel free to open an issue or fork and pull request.
