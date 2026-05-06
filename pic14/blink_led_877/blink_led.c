@@ -13,7 +13,7 @@
  * Architecture: Microchip PIC16F877A
  * Compile/Interpreter: SDCC 4.5.0 :: gputils 1.5.2
  * Programer: PicKit 3 :: pk2cmd v1.27.03
- * Operation System: Ubuntu Mint 22 
+ * Operational System: Ubuntu Mint 22 
  * Access: Public
  * Changelog: No
  * Readme and Documents: No

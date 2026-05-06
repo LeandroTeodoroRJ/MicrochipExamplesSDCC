@@ -79,7 +79,7 @@ You can change the theme putting the config file in the `~/.config/geany/colorsc
 
 ### Uploading .hex file to the PIC mC using PICkit
 $ pk2cmd -P <processor> -F <hex file> -M -R  
-If you have problems like `PK2DeviceFile.dat device file not found` copy /usr/share/pk2/PK2DeviceFile.dat to same directory at pk2cmd /usr/local/bin
+If you have problems as `PK2DeviceFile.dat device file not found` copy /usr/share/pk2/PK2DeviceFile.dat to same directory at pk2cmd /usr/local/bin
 To erase device:  
 $ pk2cmd -P <processor> -E  
 
